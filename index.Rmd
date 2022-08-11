@@ -11,7 +11,7 @@ library(tidyverse)
 ```
 
 
-```{r, clean data}
+```{r, clean data, include = FALSE}
 read_rds(file = "clean_data.rds")
 ```
 
@@ -25,7 +25,7 @@ read_rds(file = "graph_1.rds")
 read_rds(file = "graph_2.rds")
 ```
 
-```{r, include = FALSE}
+```{r, include = FALSE, echo = FALSE, message = FALSE}
 # Getting original csv file
 social_capital_county <- read.csv("social_capital_county.csv")
 social_capital_county
